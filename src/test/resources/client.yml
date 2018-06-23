@@ -5,10 +5,10 @@ security:
     client:
       client-id: acme
       client-secret: acmesecret
-      access-token-uri: https://mighty-crag-89536.herokuapp.com/oauth/token
-      user-authorization-uri: https://mighty-crag-89536.herokuapp.com/oauth/authorize
+      access-token-uri: https://githupoaut.herokuapp.com/oauth/token
+      user-authorization-uri: https://githupoaut.herokuapp.com/oauth/authorize
     resource:
-      user-info-uri: https://mighty-crag-89536.herokuapp.com/me
+      user-info-uri: https://githupoaut.herokuapp.com/me
 
 logging:
   level:
