@@ -1,0 +1,17 @@
+server:
+  port: 9999
+security:
+  oauth2:
+    client:
+      client-id: acme
+      client-secret: acmesecret
+      access-token-uri: https://mighty-crag-89536.herokuapp.com/oauth/token
+      user-authorization-uri: https://mighty-crag-89536.herokuapp.com/oauth/authorize
+    resource:
+      user-info-uri: https://mighty-crag-89536.herokuapp.com/me
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    
