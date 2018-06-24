@@ -1,4 +1,1 @@
- 
-web: java $JAVA_OPTS -cp target/*.jar com.example --p $PORT
-
-
+web java -Dserver.port=$PORT $JAVA_OPTS -jar target/githupOaut-0.0.1-SNAPSHOT.jar
