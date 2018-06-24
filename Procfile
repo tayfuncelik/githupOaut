@@ -1,1 +1,1 @@
-web: java -jar target/githupOaut-0.0.1-SNAPSHOT.jar
+web: java $JAVA_OPTS -jar target/*.jar --p $PORT
