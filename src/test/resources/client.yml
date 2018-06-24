@@ -8,7 +8,7 @@ security:
             client-name: Github user
             provider: github
             scope: user
-            redirect-uri-template: http://localhost/login/github
+            redirect-uri-template: https://githupoaut.herokuapp.com/login/github
 logging:
   level:
     org.springframework.security: DEBUG
