@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar https://github.com/tayfuncelik/githupOaut/blob/master/target/githupOaut-0.0.1-SNAPSHOT.jar --p $PORT
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
