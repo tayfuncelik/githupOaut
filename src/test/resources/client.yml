@@ -1,16 +1,31 @@
- 
+# 
+#security:
+#  oauth2:
+#    client:
+#      client-id: acme
+#      client-secret: acmesecret
+#      access-token-uri: http://localhost:8080/oauth/token
+#      user-authorization-uri: http://localhost:8080/oauth/authorize
+#    resource:
+#      user-info-uri: http://localhost:8080/me
+#      
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+#    org.springframework.web: DEBUG
+#    
 security:
   oauth2:
     client:
-      client-id: acme
-      client-secret: acmesecret
-      access-token-uri: http://localhost:8080/oauth/token
-      user-authorization-uri: http://localhost:8080/oauth/authorize
-    resource:
-      user-info-uri: http://localhost:8080/me
-      
+      registration:
+          github-client-1:
+            client-id: 78d0964597b92a556257
+            client-secret: 836646a07b33f4b04ed763592e9650024307d39e
+            client-name: Github user
+            provider: github
+            scope: user
+            redirect-uri-template: http://localhost/login/github
 logging:
   level:
     org.springframework.security: DEBUG
     org.springframework.web: DEBUG
-    
